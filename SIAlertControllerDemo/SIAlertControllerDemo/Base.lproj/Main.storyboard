@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SIAlertControllerDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Yh-oT-usZ">
+                                <rect key="frame" x="108" y="289.5" width="158" height="30"/>
+                                <state key="normal" title="Display as action sheet"/>
+                                <connections>
+                                    <action selector="actionSheet:" destination="BYZ-38-t0r" eventType="touchUpInside" id="l2s-Bh-1B6"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1JT-7Q-rue">
+                                <rect key="frame" x="133.5" y="328.5" width="107" height="30"/>
+                                <state key="normal" title="Display as Alert"/>
+                                <connections>
+                                    <action selector="alert:" destination="BYZ-38-t0r" eventType="touchUpInside" id="reM-0K-FiU"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="4Yh-oT-usZ" firstAttribute="centerX" secondItem="1JT-7Q-rue" secondAttribute="centerX" id="2Mp-73-jpD"/>
+                            <constraint firstItem="1JT-7Q-rue" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="IYs-6R-lvx"/>
+                            <constraint firstItem="1JT-7Q-rue" firstAttribute="top" secondItem="4Yh-oT-usZ" secondAttribute="bottom" constant="9" id="YIx-dB-thT"/>
+                            <constraint firstItem="1JT-7Q-rue" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="d2R-KH-GaI"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+        <!--Custom View Controller-->
+        <scene sceneID="fTk-Yv-RVC">
+            <objects>
+                <viewController storyboardIdentifier="CustomViewController" autoresizesArchivedViewToFullSize="NO" useStoryboardIdentifierAsRestorationIdentifier="YES" id="p3z-cx-umA" customClass="CustomViewController" customModule="SIAlertControllerDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Zyl-sP-PnT">
+                        <rect key="frame" x="0.0" y="0.0" width="300" height="200"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="foG-mr-UmK">
+                                <rect key="frame" x="16" y="30" width="268" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2mh-ZD-foL">
+                                <rect key="frame" x="123" y="150" width="54" height="30"/>
+                                <state key="normal" title="Dismiss"/>
+                                <connections>
+                                    <action selector="dismissController:" destination="p3z-cx-umA" eventType="touchUpInside" id="H7F-1c-AMF"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="2mh-ZD-foL" firstAttribute="centerX" secondItem="va1-Or-SHt" secondAttribute="centerX" id="1og-2k-vHA"/>
+                            <constraint firstItem="foG-mr-UmK" firstAttribute="top" secondItem="va1-Or-SHt" secondAttribute="top" constant="30" id="LbT-GL-UHG"/>
+                            <constraint firstItem="foG-mr-UmK" firstAttribute="leading" secondItem="va1-Or-SHt" secondAttribute="leading" constant="16" id="laY-ch-EsZ"/>
+                            <constraint firstItem="va1-Or-SHt" firstAttribute="trailing" secondItem="foG-mr-UmK" secondAttribute="trailing" constant="16" id="nad-Wc-ve0"/>
+                            <constraint firstItem="va1-Or-SHt" firstAttribute="bottom" secondItem="2mh-ZD-foL" secondAttribute="bottom" constant="20" id="uTQ-VL-1vW"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="va1-Or-SHt"/>
+                    </view>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="300" height="200"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kBe-OC-kW6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1213" y="-42"/>
+        </scene>
+    </scenes>
+</document>
