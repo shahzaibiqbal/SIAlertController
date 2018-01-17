@@ -15,6 +15,7 @@
 		EAAA4851200FA36400DDDC41 /* SIAlertControllerDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAAA4850200FA36400DDDC41 /* SIAlertControllerDemoTests.swift */; };
 		EAAA485C200FA3CA00DDDC41 /* CustomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAAA485B200FA3CA00DDDC41 /* CustomViewController.swift */; };
 		EAAA486A200FAB6200DDDC41 /* SIAlertController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAAA4869200FAB2B00DDDC41 /* SIAlertController.swift */; };
+		EAAA486C200FB79B00DDDC41 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = EAAA486B200FB79B00DDDC41 /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,6 +42,7 @@
 		EAAA485B200FA3CA00DDDC41 /* CustomViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomViewController.swift; sourceTree = "<group>"; };
 		EAAA4866200FA97C00DDDC41 /* SIAlertController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SIAlertController.swift; path = ../Source/SIAlertController.swift; sourceTree = "<group>"; };
 		EAAA4869200FAB2B00DDDC41 /* SIAlertController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SIAlertController.swift; sourceTree = "<group>"; };
+		EAAA486B200FB79B00DDDC41 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../../README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +93,7 @@
 				EAAA4842200FA36400DDDC41 /* Assets.xcassets */,
 				EAAA4844200FA36400DDDC41 /* LaunchScreen.storyboard */,
 				EAAA4847200FA36400DDDC41 /* Info.plist */,
+				EAAA486B200FB79B00DDDC41 /* README.md */,
 			);
 			path = SIAlertControllerDemo;
 			sourceTree = "<group>";
@@ -206,6 +209,7 @@
 			files = (
 				EAAA4846200FA36400DDDC41 /* LaunchScreen.storyboard in Resources */,
 				EAAA4843200FA36400DDDC41 /* Assets.xcassets in Resources */,
+				EAAA486C200FB79B00DDDC41 /* README.md in Resources */,
 				EAAA4841200FA36400DDDC41 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
